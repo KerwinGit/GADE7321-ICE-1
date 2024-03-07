@@ -1,0 +1,9 @@
+Theme 2
+
+A finite state machine is a model for implementing ai by assigning an agent with various predetermined states representing actions that the agent can take and the parameters which will allow the agent to transition from one state to another.
+
+An agent has a number of different states that it can be in, during which they will have predetermined functions and tasks to carry out while in these states and an agent transitions from one state to another to match the appropriate changed parameters.
+
+The transition refers to the conditions or parameters that are changed in order for the agent to change from one state to another.
+
+Representation is formed from key pieces of data which form the AI's knowledge whereas utility refers to the costs associated with various tasks and actions from that representation. Utility informs the AI on what decisions to make based off of it's knowledge representation.
