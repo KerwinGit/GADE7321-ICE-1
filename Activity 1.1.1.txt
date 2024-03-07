@@ -1,0 +1,21 @@
+Type the name of the game you assessed as the title of your entry;
+
+Persona 3 Reload (Atlus, 2024)
+
+List the AI technique(s) that you think were used in the game:
+
+Dungeon crawling in this game consists of two parts
+a) Overworld exploration, where enemies roam around the environment
+b) Turn based battles once combat has been initiated
+
+I believe that during the overworld section, enemies make use of a behaviour tree. For the basic enemy type this would consist of looking around, patrolling and chasing. While looking around, the enemy simply pauses and observes the environment in front of it. While patrolling, the enemy similarly observes the environment in front of it but is moving to a point that it has chosen to pathfind towards instead of remaining stationary. If the enemy detects the player during either of these previous sequences, it will begin the chasing sequence during which the enemy will attempt to get into close proximity of the player and attack them.
+
+During turn-based combat, I think that a number of different finite state machines (dependent on the type of enemy) would be used instead. For example, an enemy that specialises in support would prioritise healing it's low health allies and provide buffs to them when it is safe to do so whereas an enemy specialising in attacks will prioritise getting itself buffed first and then attacking enemies, making sure to exploit any weaknesses of the player's party that it becomes aware of. 
+
+Indicate which of these techniques can be considered as real AI; Motivate your opinion.
+
+I don't think that either of these methods can be considered real AI, as they do not implement machine learning in neither the behaviour tree nor the state machine. The agent does not attempt to adapt its pathfinding to better track down the player or cut off their route, but instead is simply tethered to a range near to their spawnpoint in which they wander around randomly. The typical "in-combat" AI also follows a somewhat predictable pattern, placing higher priority on certain actions depending on the situation. All of these actions appear to be predefined and because no adaptation takes place it cannot be considered real AI.
+
+Urwin, M. 2023. Artificial Intelligence in Gaming (and 10 AI Games to Know). builtin, 14 April 2023. [Online]. Available at: https://builtin.com/artificial-intelligence/ai-games [Accessed 25 February 2024].
+Balasundaram, R., 2019. What Is Real Artificial Intelligence: Characteristics of True AI. emarsys, 8 October 2019. [Online]. Available at: https://emarsys.com/learn/blog/real-ai/ [Accessed 25 February 2024].
+Unreal Engine. 2024. Behaviour Trees, n.d. [Online]. Available at: https://docs.unrealengine.com/5.0/en-US/behavior-trees-in-unreal-engine/ [Accessed 25 February 2024].
